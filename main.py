@@ -3,7 +3,7 @@ import os
 
 import utils
 
-app = Flask(__name__, static_url_path='/static')
+app = Flask('ShowMeYourBigSatellite', static_url_path='/static')
 
 @app.route('/get_coordinates')
 def get_coordinates():
