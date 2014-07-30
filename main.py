@@ -1,8 +1,17 @@
-from flask import Flask
+from flask import Flask, jsonify
 import os
+
+import utils
 
 app = Flask(__name__, static_url_path='/static')
 
+@app.route('/get_coordinates')
+def get_coordinates():
+    (longitude, latitude) = utils.random_coordinates()
+    print utils.random_coordinates()
+    print longitude, latitude
+    return jsonify(longitude=longitude,
+                   latitude=latitude)
 
 @app.route('/images/<path:path>')
 def static_proxy_images(path):
@@ -18,9 +27,5 @@ def static_proxy_js(path):
 def root():
     return app.send_static_file('simplemap.html')
 
-# @app.route("/")
-# def hello():
-#     return "Hello World!"
-
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
