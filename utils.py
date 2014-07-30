@@ -1,8 +1,8 @@
 import random
 
 def random_coordinates():
-    long_range = [55, 65]
-    lat_range = [11, 21]
+    lat_range = [59, 61]
+    long_range = [9, 17]
     return (
         random.randint(long_range[0], long_range[1]),
         random.randint(lat_range[0], lat_range[1]))
