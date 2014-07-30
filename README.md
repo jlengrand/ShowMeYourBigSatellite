@@ -38,7 +38,18 @@ I use integer coordinates, so if may happen that the same position shows up seve
 # Stuff
 
 The JSON Api thingy is rather cool, because it allows for easy improvements (you can add more satellites, more info like name, date or launch, . . .).
+
 Using Flask, you could also easily develop some kind of a REST Api that allows people to choose the satellite they want to see, etc . . .
 To fix that, you could use a push mechanism, that would send data to the clients instead of answering their requests.
+
+# Running it
+
+To run it, you'll need python and a virtualenv. 
+
+* Clone the repo
+* Follow [this tutorial](www.jontourage.com/2011/02/09/virtualenv-pip-basics/)
+* Create a virtualenv and use my requirements.txt
+* Run $ python main.py
+
 
 Voila . . . :)
