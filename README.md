@@ -4,7 +4,7 @@ ShowMeYourBigSatellite
 A simple app that displays the position of satellites in the sky in real-time
 
 **The demo can be found [here](http://jlengrand.pythonanywhere.com/static/simplemap.html).**
-(J'ai testé avec Chrome incognito et Firefox.)
+(Tested on Chrome incognito and Firefox.)
 
 
 The concept is rather simple:
