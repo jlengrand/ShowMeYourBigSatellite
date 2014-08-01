@@ -13,6 +13,11 @@ def get_coordinates():
     return jsonify(longitude=longitude,
                    latitude=latitude)
 
+@app.route('/css/<path:path>')
+def static_proxy_images(path):
+    # send_static_file will guess the correct MIME type
+    return app.send_static_file(os.path.join('css', path))
+
 @app.route('/images/<path:path>')
 def static_proxy_images(path):
     # send_static_file will guess the correct MIME type
