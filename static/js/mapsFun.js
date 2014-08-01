@@ -27,6 +27,7 @@ function getPosition(){
         $.getJSON("http://localhost:5000/get_coordinates",function(result){
         var pos = new google.maps.LatLng(result.latitude, result.longitude);
         satMarker.setPosition(pos);
+        map.panTo(satMarker.getPosition());
     });
 }
 
