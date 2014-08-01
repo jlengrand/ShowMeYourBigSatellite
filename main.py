@@ -1,4 +1,5 @@
 from flask import Flask, jsonify
+from flask.ext.cors import cross_origin
 import os
 
 import utils
@@ -6,6 +7,7 @@ import utils
 app = Flask('ShowMeYourBigSatellite', static_url_path='/static')
 
 @app.route('/get_coordinates')
+@cross_origin(headers=['Content-Type']) # allow all origins all methods.
 def get_coordinates():
     (longitude, latitude) = utils.random_coordinates()
     print utils.random_coordinates()
