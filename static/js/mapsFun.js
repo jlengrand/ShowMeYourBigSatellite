@@ -11,6 +11,12 @@ function initializeMap() {
         center: centerStart
     };
 
+var satelliteIcon = L.icon({
+    iconUrl: 'images/satellite_64.png',
+    iconSize:     [32, 32], // size of the icon
+    iconAnchor:   [16, 16], // point of the icon which will correspond to marker's location
+});
+
     map = new L.map('map',  mapOptions);
 
     // adds an OpenStreetMap tile layer
@@ -19,9 +25,8 @@ function initializeMap() {
     map.addLayer(tileLayer);
 
     var image = 'images/satellite_64.png';
-    satMarker = new L.Marker(centerStart);
+    satMarker = new L.Marker(centerStart, {icon: satelliteIcon});
     satMarker.addTo(map);
-    //TODO: Custom marker
 
 
 };
@@ -31,7 +36,6 @@ function getPosition(){
         $.getJSON("http://localhost:5000/get_coordinates",function(result){
         var pos = new L.latLng(result.latitude, result.longitude);
         satMarker.setLatLng(pos);
-        //FIXME: change
     });
 }
 
