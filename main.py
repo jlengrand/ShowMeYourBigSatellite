@@ -14,7 +14,7 @@ def get_coordinates():
                    latitude=latitude)
 
 @app.route('/css/<path:path>')
-def static_proxy_images(path):
+def static_proxy_css(path):
     # send_static_file will guess the correct MIME type
     return app.send_static_file(os.path.join('css', path))
 
