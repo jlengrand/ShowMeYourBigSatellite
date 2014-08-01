@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"center",
+				"centerStart"
+			],
+			[
 				"m",
 				"mainCoord"
 			],
@@ -532,6 +536,9 @@
 	},
 	"file_history":
 	[
+		"/home/jll/Documents/01_perso/14_ShowMeYourBigSatellite/.git/COMMIT_EDITMSG",
+		"/home/jll/Documents/01_perso/14_ShowMeYourBigSatellite/main.py",
+		"/home/jll/Documents/01_perso/14_ShowMeYourBigSatellite/.gitignore",
 		"/home/jll/dev/source/main/spacemetric/keystoneapi/build.xml",
 		"/home/jll/dev/source/main/spacemetric/build.xml",
 		"/home/jll/dev/source/main/products/keystone/build.xml",
@@ -656,10 +663,7 @@
 		"/home/jll/dev/source_git/main_zwolle/csd/db/build.properties",
 		"/opt/spacemetric/keystone/config/keystone.postgres",
 		"/home/jll/Desktop/WEB-INF/web.xml",
-		"/home/jll/Documents/01_perso/19_jenkinsArduinoNotification/arduino/blink/Blink/Blink.ino",
-		"/home/jll/Documents/01_perso/18_blog/assets/fonts/icomoon.eot",
-		"/home/jll/Documents/01_perso/18_blog/assets/css/main.min.css",
-		"/home/jll/Documents/01_perso/18_blog/_posts/2012-08-31-ivolution-development-status-35.markdown"
+		"/home/jll/Documents/01_perso/19_jenkinsArduinoNotification/arduino/blink/Blink/Blink.ino"
 	],
 	"find":
 	{
@@ -873,7 +877,7 @@
 		"cols":
 		[
 			0.0,
-			0.578905221254,
+			0.469688049537,
 			1.0
 		],
 		"rows":
