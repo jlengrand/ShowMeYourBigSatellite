@@ -17,13 +17,14 @@ def get_coordinates(satName):
 @app.route('/satellites')
 @cross_origin(headers=['Content-Type']) # allow all origins all methods.
 def satellites():
-    print whereismysat.satlist.keys()
+    names = whereismysat.satlist.keys()
+    print names
     return jsonify(name=whereismysat.satlist.keys())
 
 
 @app.route('/')
 def hello():
-    return render_template('simplemap.html')
+    return render_template('dropdown_test.html', satellites=whereismysat.satlist.keys())
 
 #### #########
 # Used for testing only
