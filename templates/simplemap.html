@@ -13,12 +13,19 @@
   <div id="map"></div>
   <div id="menu">
     <h1>Menu<h1>
+       <div id="satellites">
     <h2>Select your satellite : <h2>
     <select id="satellite">
       {% for sat in satellites %}
       <option value="{{ sat }}">{{ sat }}</option>
       {% endfor %}
     </select>
+  </div>
+  <div id="servers">
+    <h2>Server address : <h2>
+    <input type="text" id="server" value="http://localhost:5000">
+    </div>
+
   </div>
 </body>
 

@@ -537,6 +537,8 @@
 	},
 	"file_history":
 	[
+		"/home/jll/Documents/01_perso/10_whereShouldILive/index.html",
+		"/home/jll/Documents/01_perso/14_ShowMeYourBigSatellite/whereismysat.py",
 		"/home/jll/Documents/01_perso/14_ShowMeYourBigSatellite/.git/COMMIT_EDITMSG",
 		"/home/jll/Documents/01_perso/14_ShowMeYourBigSatellite/templates/dropdown_test.html",
 		"/home/jll/Documents/01_perso/14_ShowMeYourBigSatellite/main.py",
@@ -662,9 +664,7 @@
 		"/home/jll/dev/source_git/main_zwolle/majiic/db/build.properties",
 		"/home/jll/dev/source_git/main_zwolle/csd/db/build.xml",
 		"/home/jll/dev/source_git/main_zwolle/csd/build.properties",
-		"/home/jll/dev/source_git/main_zwolle/csd/db/build.properties",
-		"/opt/spacemetric/keystone/config/keystone.postgres",
-		"/home/jll/Desktop/WEB-INF/web.xml"
+		"/home/jll/dev/source_git/main_zwolle/csd/db/build.properties"
 	],
 	"find":
 	{
