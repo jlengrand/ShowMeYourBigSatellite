@@ -6,10 +6,10 @@ import whereismysat, ephem
 
 app = Flask('ShowMeYourBigSatellite', static_url_path='/static')
 
-@app.route('/get_coordinates')
+@app.route('/get_coordinates/<satName>')
 @cross_origin(headers=['Content-Type']) # allow all origins all methods.
-def get_coordinates():
-    sat=whereismysat.getPos("TERRA")
+def get_coordinates(satName):
+    sat=whereismysat.getPos(satName)
     return jsonify(longitude=sat.sublong.real / ephem.degree,
                    latitude=sat.sublat.real / ephem.degree)
 

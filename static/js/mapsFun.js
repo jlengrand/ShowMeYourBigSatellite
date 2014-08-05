@@ -33,7 +33,7 @@ var satelliteIcon = L.icon({
 
 // Gets the latest satellite position from the server
 function getPosition(){
-        $.getJSON("http://localhost:5000/get_coordinates",function(result){
+        $.getJSON("http://localhost:5000/get_coordinates/TERRA",function(result){
         var pos = new L.latLng(result.latitude, result.longitude);
         satMarker.setLatLng(pos);
         map.panTo(satMarker.getLatLng());

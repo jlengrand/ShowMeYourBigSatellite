@@ -15,7 +15,7 @@ class TleGroup:
         self.url = url
         self.name = name
         self.load()
-    
+
     def load(self):
         """ Read a TLEs file stream and creates a list of satellites.
         This function aims to be called every day"""
@@ -34,7 +34,6 @@ class TleGroup:
             l1 = s.readline()
         s.close()
         print "%i satellites loaded into list / Total in list: %i"%(count,len(satlist))
-
 
 def getPos(name):
     global satlist
