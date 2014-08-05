@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"sat",
+				"satlist"
+			],
+			[
 				"center",
 				"centerStart"
 			],
@@ -534,6 +538,7 @@
 	"file_history":
 	[
 		"/home/jll/Documents/01_perso/14_ShowMeYourBigSatellite/.git/COMMIT_EDITMSG",
+		"/home/jll/Documents/01_perso/14_ShowMeYourBigSatellite/templates/dropdown_test.html",
 		"/home/jll/Documents/01_perso/14_ShowMeYourBigSatellite/main.py",
 		"/home/jll/Documents/01_perso/14_ShowMeYourBigSatellite/.gitignore",
 		"/home/jll/dev/source/main/spacemetric/keystoneapi/build.xml",
@@ -659,8 +664,7 @@
 		"/home/jll/dev/source_git/main_zwolle/csd/build.properties",
 		"/home/jll/dev/source_git/main_zwolle/csd/db/build.properties",
 		"/opt/spacemetric/keystone/config/keystone.postgres",
-		"/home/jll/Desktop/WEB-INF/web.xml",
-		"/home/jll/Documents/01_perso/19_jenkinsArduinoNotification/arduino/blink/Blink/Blink.ino"
+		"/home/jll/Desktop/WEB-INF/web.xml"
 	],
 	"find":
 	{
@@ -861,7 +865,7 @@
 		"cols":
 		[
 			0.0,
-			0.53850118085,
+			0.472844615194,
 			1.0
 		],
 		"rows":

@@ -1,0 +1,27 @@
+html, body{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+}
+
+#map {
+    float:left;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 90%;
+}
+
+#menu{
+    margin-left: 90%;
+    height: 100%;
+    padding: 5px;
+}
+
+h1{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 16px;
+}

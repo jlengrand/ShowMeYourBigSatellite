@@ -1,4 +1,5 @@
 from flask import Flask, jsonify
+from flask import render_template
 from flask.ext.cors import cross_origin
 import os
 
@@ -6,12 +7,28 @@ import whereismysat, ephem
 
 app = Flask('ShowMeYourBigSatellite', static_url_path='/static')
 
-@app.route('/get_coordinates')
+@app.route('/get_coordinates/<satName>')
 @cross_origin(headers=['Content-Type']) # allow all origins all methods.
-def get_coordinates():
-    sat=whereismysat.getPos("TERRA")
+def get_coordinates(satName):
+    sat=whereismysat.getPos(satName)
     return jsonify(longitude=sat.sublong.real / ephem.degree,
                    latitude=sat.sublat.real / ephem.degree)
+
+@app.route('/satellites')
+@cross_origin(headers=['Content-Type']) # allow all origins all methods.
+def satellites():
+    names = whereismysat.satlist.keys()
+    print names
+    return jsonify(name=whereismysat.satlist.keys())
+
+
+@app.route('/')
+def hello():
+    return render_template('simplemap.html', satellites=whereismysat.satlist.keys())
+
+#### #########
+# Used for testing only
+##############
 
 @app.route('/css/<path:path>')
 def static_proxy_css(path):
