@@ -13,6 +13,13 @@ def get_coordinates(satName):
     return jsonify(longitude=sat.sublong.real / ephem.degree,
                    latitude=sat.sublat.real / ephem.degree)
 
+@app.route('/satellites')
+@cross_origin(headers=['Content-Type']) # allow all origins all methods.
+def satellites():
+    print whereismysat.satlist.keys()
+    return jsonify(name=whereismysat.satlist.keys())
+
+
 @app.route('/css/<path:path>')
 def static_proxy_css(path):
     # send_static_file will guess the correct MIME type
