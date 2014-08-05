@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Simple Map</title>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-    <style>
-      html, body, #map {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-      }
-    </style>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<head>
+  <title>Simple Map</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 
-      <link href='css/leaflet.css' rel='stylesheet' />
-  </head>
-  <body>
-    <div id="map"></div>
-  </body>
+  <link href='css/leaflet.css' rel='stylesheet' />
+  <link href='css/simplemap.css' rel='stylesheet' />
+</head>
+<body>
+  <div id="map"></div>
+  <div id="menu">
+    <h1>Menu<h1>
+    <h2>Select your satellite : <h2>
+    <select>
+      {% for sat in satellites %}
+      <option value="{{ sat }}">{{ sat }}</option>
+      {% endfor %}
+    </select>
+  </div>
+</body>
 
-  <script src='js/lib/leaflet.js'></script>
-  <script src="js/lib/jquery.min.js"></script>
-  <script src="js/mapsFun.js"></script>
+<script src='js/lib/leaflet.js'></script>
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/mapsFun.js"></script>
 </html>
 

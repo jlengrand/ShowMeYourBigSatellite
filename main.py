@@ -24,7 +24,7 @@ def satellites():
 
 @app.route('/')
 def hello():
-    return render_template('dropdown_test.html', satellites=whereismysat.satlist.keys())
+    return render_template('simplemap.html', satellites=whereismysat.satlist.keys())
 
 #### #########
 # Used for testing only
