@@ -1,4 +1,5 @@
 from flask import Flask, jsonify
+from flask import render_template
 from flask.ext.cors import cross_origin
 import os
 
@@ -19,6 +20,14 @@ def satellites():
     print whereismysat.satlist.keys()
     return jsonify(name=whereismysat.satlist.keys())
 
+
+@app.route('/')
+def hello():
+    return render_template('simplemap.html')
+
+#### #########
+# Used for testing only
+##############
 
 @app.route('/css/<path:path>')
 def static_proxy_css(path):

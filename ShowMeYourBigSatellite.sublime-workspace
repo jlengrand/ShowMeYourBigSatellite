@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"sat",
+				"satlist"
+			],
+			[
 				"center",
 				"centerStart"
 			],
@@ -861,7 +865,7 @@
 		"cols":
 		[
 			0.0,
-			0.53850118085,
+			0.374359766709,
 			1.0
 		],
 		"rows":
